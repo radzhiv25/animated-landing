@@ -171,11 +171,3 @@ npm run preview
 ## 🔗 Live Demo
 
 [Deployed Website Link](https://your-deployment-url.com)
-
-## 📧 Contact
-
-For questions or feedback, please contact: hiring@feeble.io
-
----
-
-**Note**: This implementation prioritizes code quality, maintainability, and pixel-perfect accuracy while following modern React best practices.
