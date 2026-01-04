@@ -1,3 +1,5 @@
+import type { Transition } from 'framer-motion'
+
 // Animation configuration presets for birds
 export const createBirdAnimation = (
   xPath: string[],
@@ -5,7 +7,12 @@ export const createBirdAnimation = (
   rotatePath: number[],
   durations: { x: number; y: number; rotate: number },
   delay?: number
-) => ({
+): {
+  x: string[]
+  y: number[]
+  rotate: number[]
+  transition: Transition
+} => ({
   x: xPath,
   y: yPath,
   rotate: rotatePath,
@@ -26,7 +33,7 @@ export const createBirdAnimation = (
       repeat: Infinity,
       ease: [0.4, 0, 0.6, 1] as const
     }
-  }
+  } as Transition
 })
 
 // Hero section bird configurations
